@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alexander's Thoughts Page</title>
-        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander's Thoughts Page</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('experiment-canvas');
+            var context = canvas.getContext('2d');
+            context.fillStyle = '#FF0000';
+            context.fillRect(20, 20, 150, 100);
+        };
+    </script>
+</head>
+
+<body>
+    <nav class="pages">
+        <ul>
+            <li class="page"><a href="/index.html">Home Page</a></li>
+            <li class="page"><a href="/other_pages/about.html">About Me</a></li>
+            <li class="page"><a href="/other_pages/projects.html">Projects</a></li>
+            <li class="page"><a href="/other_pages/interview.html">Interview</a></li>
+            <li class="page"><a href="/other_pages/contact.html">Contact Me</a></li>
+            <li class="page"><a href="/other_pages/resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
         <h1>Thoughts</h1>
-        <footer>
+        <section>
             <hr>
-            <p>&copy;Copyright 2023 by <b>MathElderGod</b>&trade; All rights reserved.</p>
-            <p>By: Alexander G. Arias</p>
-        </footer>
-    </body>
+            <h2>Experiment: </h2>
+            <p>Here is an example of the Canvas HTML tag:</p>
+            <canvas id="experiment-canvas" width="200" height="100" style="border:1em solid #000000;">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+            <p>Here is an example of the SVG HTML tag:</p>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                Your browser does not support inline svg
+            </svg>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy;Copyright 2023 by <b>MathElderGod</b>&trade; All rights reserved.</p>
+        <p>By: Alexander G. Arias</p>
+    </footer>
+</body>
+
 </html>
